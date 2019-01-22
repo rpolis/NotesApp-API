@@ -1,0 +1,22 @@
+logging:
+  level: INFO
+  loggers:
+    com.udemy: DEBUG
+
+database:
+  driverClass: com.mysql.jdbc.Driver
+  user : rohit
+  password : qwerty123
+  url: "jdbc:mysql://mysql/NotesApp?useSSL=false"
+
+  #database:
+  # driverClass: com.mysql.jdbc.Driver
+  # user : rohit
+  #password :  qwerty123
+# url: "jdbc:mysql://mysql/NotesApp?useSSL=false"
+
+#database:
+  #driverClass: com.mysql.jdbc.Driver
+  #user : rohit
+  #password : Root@123
+  #url: "jdbc:mysql://localhost:3306/NotesApp"

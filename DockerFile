@@ -1,0 +1,12 @@
+FROM openjdk:8-jdk
+
+COPY config.yml /data/dropwizard-sample/config.yml
+COPY /target/DropBookmarks-1.0-SNAPSHOT.jar /data/dropwizard-sample/DropBookmarks-1.0-SNAPSHOT.jar
+
+WORKDIR /data/dropwizard-sample
+
+RUN java -version
+
+CMD ["java","-jar","DropBookmarks-1.0-SNAPSHOT.jar","server","config.yml"]
+
+EXPOSE 8080-8081
